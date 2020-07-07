@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>temp</title>
+	<script type="text/javascript">
+		let i = 10;
+		var fs = require('fs');
+		var files = fs.readdirSync("../static/images/william-morris-w/");
+		console.log(files)
+		function timeout() {
+			setTimeout(function () {
+				var image = document.getElementById("artImage");
+				let s = "../static/images/william-morris-w/epoch_"+i+".jpg";
+
+				image.src = s;
+
+				console.log(s);
+				i = i + 10;
+				timeout();
+			}, 20000);
+		}
+	</script>
+</head>
+<body onload="timeout()">
+	<img src="../static/images/william-morris-w/epoch_0.jpg" id="artImage">
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<!-- ***** RWD : STEP 1 ***** -->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="../static/fonts.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/static/font-awesome.css">
+	<script src="../static/jquery.js"></script>
+
+	<!-- Custom Code files -->
+	<link rel="stylesheet" type="text/css" href="../static/styles.css">
+	<link rel="stylesheet" type="text/css" href="../static/animations.css">
+	<script src="../static/scripts.js"></script>
+	<script src="../static/animations.js"></script>
+</head>
+<body>
+	<div class="m-scene" id="main">
+		<div class="m-aside scene_element scene_element--fadein">
+			<div id="navbar" class="navbar">
+				<div class="left" id="logo">Art Generator</div>
+				<a class="left" href="/">Home</a>
+				<a class="left active" href="about">About</a>
+				<a class="left" href="contact">Contact</a>
+
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon right" onclick="myFunction()">&#9776;</a>
+			</div>
+		</div>
+
+		<div class="m-right-panel m-page scene_element scene_element--fadeinright">
+			<div class="about">
+				<h1>Our Mission</h1>
+				<p>To Provide Art Enthusiasts with computer Generated Images</p>
+				<h2>About</h2>
+				<p>We have developed a system which takes input from an existing dataset path, or scrapes images from <a href="https://www.wikiart.org/">WikiArt</a> and saves them, then it passes the image resizer filter and then there are two tests which are optional for this website, which are the Glitcher Test and the watermark test, and then it sends the images to the one of the Generative Adversarial Network model (among three: Vanilla GAN, DC-GAN and W-GAN-gp) or it sends two of the images from different datasets to the Neural Style Transfer Module the final generated image from both of these modules get sent to the Super Resolution Generative Adversarial Network whose job is to sharpen up the image and then finally the images are viewed on this webpage</p>
+				<p>This Website was basically Our Final Year Project.</p>
+			</div>
+			<div class="row others">
+				<div class="demo col-4 col-m-4">
+					<img src="../static/images/requestDemo.svg">
+					<p>Request a demonstration of our website</p>
+					<a href="" class="button">Request a Demo</a>
+				</div>
+				<div class="data col-4 col-m-4">
+					<img src="../static/images/dataInquiry.svg">
+					<p>Get to Know how we Gather our Data</p>
+					<a href="" class="button">Data Inquiry</a>
+				</div>
+				<div class="customer col-4 col-m-4">
+					<img src="../static/images/customerSupport.svg">
+					<p>Reach out to our customer support by emailing us your problem</p>
+					<a href="mailto:someone@alias.com" class="button">Customer Support</a>
+				</div>
+			</div>
+			<div class="footer">
+				<div id="newsLetter">
+					<h3>Subscribe to our News-Letter</h3>
+					<p>We will send you emails Weekly to keep you posted on your Weekly Tech News</p>
+					<input type="email" placeholder="someone@alias.com">
+					<a class="button" href="#newsLetter">Subscribe</a>
+				</div>
+				<div class="footer-links row">
+					<h2 align="center">Useful links to our Website</h2>
+					<div style="float: left; width: 33%;">
+						<ul>
+							<li><a href="contact">Contact</a></li>
+							<li><a href="about">About</a></li>
+							<li><a href="archives">Archives</a></li>
+						</ul>
+					</div>
+					<div style="float: left; width: 33%;">
+						<ul>
+							<li><a href="advertising">Advertise</a></li>
+							<li><a href="workWithUs">Work with Us</a></li>
+							<li><a href="license">License</a></li>
+						</ul>
+					</div>
+
+					<div style="float: right; width: 33%;">
+						<ul>
+							<li><a href="random">Random</a></li>
+							<li><a href="guest-posting">Guest Posting</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyrights">
+					<p>
+						&copy; Copyright 2018<br>All Rights Reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
